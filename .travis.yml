@@ -32,4 +32,5 @@ env:
 matrix:
   include:
     - rvm: jruby-9.1.6.0
-      env: RGV=v2.6.8
+      env:
+        - RGV=v2.6.8 JRUBY_OPTS="-J-Djruby.launch.inproc=true"
