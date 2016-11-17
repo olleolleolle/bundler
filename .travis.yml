@@ -27,10 +27,10 @@ env:
   # We need to know if changes to rubygems will break bundler on release
 #  - RGV=master
   # Test the latest rubygems release with all of our supported rubies
-  - RGV=v2.6.8
+  - RGV=v2.6.6
 
 matrix:
   include:
     - rvm: jruby-9.1.6.0
       env:
-        - RGV=v2.6.8 JRUBY_OPTS="-J-Djruby.launch.inproc=true"
+        - RGV=v2.6.6 JRUBY_OPTS="-J-Djruby.launch.inproc=true"
